@@ -710,3 +710,7 @@ section.info {
     background-position: 0 -10%;
   }
 }
+
+@media screen and (min-width:801px) and (max-height:670px) {
+    .visual img {width: 22vw;}
+}
