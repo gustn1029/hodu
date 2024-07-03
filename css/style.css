@@ -162,7 +162,7 @@ br.mobile {
 }
 .visual img {
   position: absolute;
-  right: 0;
+  right: 20px;
   bottom: 0;
   max-width: 415px;
   width: 30vw;
@@ -556,6 +556,7 @@ section.info {
     gap: 30px;
   }
   .visual .inner div {
+    padding-top: 2vh;
     height: auto;
     align-items: center;
   }
