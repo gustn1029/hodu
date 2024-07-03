@@ -134,9 +134,9 @@ br.mobile {
 
 .visual .inner {
   display: flex;
-  align-items: end;
   justify-content: space-between;
   gap: 128px;
+  position: relative;
 }
 .visual .inner div {
   display: flex;
@@ -161,8 +161,11 @@ br.mobile {
   place-self: baseline;
 }
 .visual img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   max-width: 415px;
-  width: 32vw;
+  width: 30vw;
   transform: translate(0, 100px);
 }
 
@@ -563,7 +566,7 @@ section.info {
     position: absolute;
     left: 50%;
     bottom: 0;
-    max-width: 300px;
+    max-width: 197px;
     width: 45vw;
     transform: translate(-50%, 18%);
   }
