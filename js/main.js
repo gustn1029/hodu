@@ -1,15 +1,15 @@
 // header fixed
-const header = document.getElementById("header");
+// const header = document.getElementById("header");
 
-const headerFixed = () => {
-  if (window.scrollY > header.clientHeight) {
-    header.classList.add("fixed");
-  } else {
-    if (header.classList.contains("fixed")) {
-      header.classList.remove("fixed");
-    }
-  }
-};
+// const headerFixed = () => {
+//   if (window.scrollY > header.clientHeight) {
+//     header.classList.add("fixed");
+//   } else {
+//     if (header.classList.contains("fixed")) {
+//       header.classList.remove("fixed");
+//     }
+//   }
+// };
 
 // mobile menu 
 const viewMenuBtn = document.querySelector(".view-menu-btn");
@@ -51,8 +51,16 @@ const closeModal = () => {
   modal.classList.add("hidden");
 };
 
-window.addEventListener("scroll", headerFixed);
+// top btn
+const topBtn = document.querySelector(".top-btn");
+
+const moveTop = ()=> {
+  window.screenY = 0;
+}
+
+// window.addEventListener("scroll", headerFixed);
 viewMenuBtn.addEventListener("click", viewMenu);
 closeMenuBtn.addEventListener("click", closeMenu);
 subscribeBtn.addEventListener("click", subscribe);
 closeBtn.addEventListener("click", closeModal);
+topBtn.addEventListener("click", moveTop);
