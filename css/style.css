@@ -62,7 +62,7 @@ br.mobile {
   top: 0;
   width: 100%;
   z-index: 900;
-  background-color: #F2E9D8;
+  background-color: #f2e9d8;
 }
 /* #header.fixed {
   position: fixed;
@@ -145,7 +145,8 @@ br.mobile {
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  position: relative; z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 .visual strong {
   display: block;
@@ -158,8 +159,6 @@ br.mobile {
   margin-bottom: 40px;
 }
 
-.visual p {
-}
 .visual a {
   place-self: baseline;
 }
@@ -168,8 +167,14 @@ br.mobile {
   right: 20px;
   bottom: 0;
   max-width: 415px;
-  width: 30vw; z-index: 0;
+  width: 30vw;
+  z-index: 0;
   transform: translate(0, 100px);
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
 }
 
 /* info */
@@ -199,13 +204,9 @@ section.info {
 .info strong {
   display: block;
   margin-bottom: 30px;
-  font-size: var(--title-font-size);
-  font-weight: 700;
   word-break: keep-all;
 }
 
-.info p {
-}
 
 /* explain */
 .explain {
@@ -293,8 +294,6 @@ section.info {
 .subscribe h2 {
   grid-area: h2;
   margin-bottom: 18px;
-  font-size: var(--title-font-size);
-  font-weight: 700;
   color: #fff;
 }
 
@@ -373,8 +372,6 @@ section.info {
   display: block;
   margin-bottom: 12px;
   color: var(--primary-color);
-  font-size: var(--title-font-size);
-  font-weight: 700;
 }
 
 .modal p {
@@ -517,7 +514,7 @@ section.info {
   #header .inner {
     height: 76px;
   }
-  #header .logo a{
+  #header .logo a {
     width: 92px;
     height: 28px;
   }
